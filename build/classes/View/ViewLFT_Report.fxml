@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="544.0" prefWidth="831.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ViewLFT_ReportController">
+   <children>
+      <Button fx:id="Refresh" layoutX="746.0" layoutY="484.0" mnemonicParsing="false" onAction="#btnRefresh" text="Refresh" />
+      <Button fx:id="Delete" layoutX="601.0" layoutY="484.0" mnemonicParsing="false" onAction="#btnDeleteReport" text="Delete" />
+      <Button fx:id="Update" layoutX="526.0" layoutY="484.0" mnemonicParsing="false" onAction="#btnUpdateReport" text="Update" />
+      <Button fx:id="AddNew" layoutX="441.0" layoutY="484.0" mnemonicParsing="false" onAction="#btnAddNewReport" prefHeight="25.0" prefWidth="75.0" text="Add New" />
+      <Button fx:id="ViewAll" layoutX="673.0" layoutY="484.0" mnemonicParsing="false" onAction="#btnViewAllReport" text="ViewAll" />
+      <TextField fx:id="SearchReport" layoutX="11.0" layoutY="484.0" prefHeight="25.0" prefWidth="317.0" promptText="Search Report ID...." />
+      <Button fx:id="Search" layoutX="353.0" layoutY="484.0" mnemonicParsing="false" onAction="#btnSearchReport" text="Search" />
+      <ScrollPane layoutX="11.0" layoutY="18.0" minWidth="-Infinity" prefHeight="454.0" prefViewportHeight="452.0" prefViewportWidth="991.0" prefWidth="845.0">
+         <content>
+            <TableView fx:id="LFTReportTable" layoutX="11.0" layoutY="18.0" minWidth="-Infinity" prefHeight="454.0" prefWidth="845.0">
+               <columns>
+                  <TableColumn fx:id="RID" prefWidth="58.0" text="RID" />
+                  <TableColumn fx:id="PID" prefWidth="62.0" text="P_ID" />
+                  <TableColumn fx:id="Bilirubin_Total" prefWidth="100.0" text="Bilirubin_Total" />
+                  <TableColumn fx:id="SGOT" minWidth="6.0" prefWidth="63.0" text="SGOT" />
+                  <TableColumn fx:id="SGPT" minWidth="0.0" prefWidth="70.0" text="SGPT" />
+                  <TableColumn fx:id="Alkaline_Phosphatase" prefWidth="131.0" text="Alkaline_Phosphatase" />
+                  <TableColumn fx:id="Proteins" minWidth="4.0" prefWidth="59.0" text="Proteins" />
+                  <TableColumn fx:id="Albumin" minWidth="4.0" prefWidth="83.0" text="Albumin" />
+                  <TableColumn fx:id="Globulin" prefWidth="71.0" text="Globulin" />
+                  <TableColumn fx:id="AG_Ratio" prefWidth="72.0" text="AG_Ratio" />
+                  <TableColumn fx:id="GGTP" prefWidth="73.0" text="GGTP" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

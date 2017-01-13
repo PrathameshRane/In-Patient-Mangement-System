@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="547.0" prefWidth="926.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeController">
+    <stylesheets>
+        <URL value="@/CSS/home.css" />
+    </stylesheets>
+   <children>
+      <BorderPane layoutX="14.0" layoutY="14.0" prefHeight="540.0" prefWidth="723.0">
+         <bottom>
+            <AnchorPane prefHeight="58.0" prefWidth="820.0" style="-fx-border-color: ff4e3c; -fx-border-width: 5px 0px 0px 0px; -fx-bo: ;" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="357.0" prefWidth="683.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" layoutX="177.0" layoutY="165.0" prefHeight="344.0" prefWidth="683.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane prefHeight="325.0" prefWidth="881.0">
+                           <children>
+                              <Rectangle arcWidth="5.0" fill="#878676" height="398.0" stroke="#cacdd0" strokeType="INSIDE" width="820.0" />
+                              <GridPane layoutX="590.0" layoutY="250.0" prefHeight="130.0" prefWidth="228.0">
+                                 <children>
+                                    <Label layoutX="10.0" text="Total Employee :" textFill="#bbce61" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font></Label>
+                                    <Label layoutX="10.0" text="Total Doctors :" textFill="#bbce61" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Total Empty Beds :" textFill="#bbce61" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font></Label>
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="120.0" />
+                                    <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="108.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="104.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="120.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <VBox alignment="TOP_CENTER" layoutX="15.0" prefHeight="360.0" prefWidth="859.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Text fx:id="txtOrgAddress" fill="#bbce61" strokeType="OUTSIDE" strokeWidth="0.0" text="Address : Lifecare Tower, S.V. Road, Malad-E, Mumbai-400097." textAlignment="CENTER" wrappingWidth="647.7294921875">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></Text>
+                                    <Text fx:id="txtorgPhoneNumber" fill="#bbce61" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number: 022-28457856." textAlignment="CENTER" wrappingWidth="647.7294921875">
+                                         <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></Text>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </AnchorPane>
+         </center>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+         <top>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="64.0" prefWidth="820.0" style="-fx-border-color: #ff4e3c; -fx-border-style: solid; -fx-border-width: 0px 0px 5px;">
+               <children>
+                  <HBox alignment="TOP_CENTER" layoutX="194.0" layoutY="28.0" prefHeight="100.0" prefWidth="875.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label fx:id="lblOrgName" alignment="CENTER" prefHeight="69.0" prefWidth="641.0" text="Sanjivani Hospital" textFill="#10100d">
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

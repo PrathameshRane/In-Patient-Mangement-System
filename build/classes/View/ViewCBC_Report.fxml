@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="538.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ViewCBC_ReportController">
+   <children>
+      <ScrollPane layoutX="11.0" layoutY="18.0" minWidth="-Infinity" prefHeight="454.0" prefViewportHeight="452.0" prefViewportWidth="991.0" prefWidth="870.0">
+         <content>
+            <TableView fx:id="CBCReportTable" layoutX="11.0" layoutY="18.0" minWidth="-Infinity" prefHeight="454.0" prefWidth="1223.0">
+               <columns>
+                  <TableColumn fx:id="RID" prefWidth="53.0" text="RID" />
+                  <TableColumn fx:id="PID" prefWidth="60.0" text="P_ID" />
+                  <TableColumn fx:id="Haemoglobin" prefWidth="104.0" text="Haemoglobin" />
+                  <TableColumn fx:id="RBC_Count" minWidth="6.0" prefWidth="81.0" text="RBC_Count" />
+                  <TableColumn fx:id="PCV" minWidth="0.0" prefWidth="58.0" text="PCV" />
+                  <TableColumn fx:id="MCV" prefWidth="64.0" text="MCV" />
+                  <TableColumn fx:id="MCH" prefWidth="59.0" text="MCH" />
+                  <TableColumn fx:id="MCHC" minWidth="4.0" prefWidth="66.0" text="MCHC" />
+                  <TableColumn fx:id="RDW" prefWidth="58.0" text="RDW" />
+                  <TableColumn fx:id="Total_WBC_Count" prefWidth="113.0" text="Total_WBC_Count" />
+                  <TableColumn fx:id="Neutrophils" prefWidth="86.0" text="Neutrophils" />
+                  <TableColumn fx:id="Lymphocytes" prefWidth="85.0" text="Lymphocytes" />
+                  <TableColumn fx:id="Eosinophils" prefWidth="76.0" text="Eosinophils" />
+                  <TableColumn fx:id="Monocytes" prefWidth="74.0" text="Monocytes" />
+                  <TableColumn fx:id="Basophils" prefWidth="74.0" text="Basophils" />
+                  <TableColumn fx:id="Platelet_Count" prefWidth="123.0" text="Platelet_Count" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Button fx:id="Refresh" layoutX="746.0" layoutY="484.0" mnemonicParsing="false" onAction="#btnRefresh" text="Refresh" />
+      <Button fx:id="Delete" layoutX="601.0" layoutY="484.0" mnemonicParsing="false" onAction="#btnDeleteReport" text="Delete" />
+      <Button fx:id="Update" layoutX="526.0" layoutY="484.0" mnemonicParsing="false" onAction="#btnUpdateReport" text="Update" />
+      <Button fx:id="AddNew" layoutX="441.0" layoutY="484.0" mnemonicParsing="false" onAction="#btnAddNewReport" prefHeight="25.0" prefWidth="75.0" text="Add New" />
+      <Button fx:id="ViewAll" layoutX="673.0" layoutY="484.0" mnemonicParsing="false" onAction="#btnViewAllReport" text="ViewAll" />
+      <TextField fx:id="SearchReport" layoutX="10.0" layoutY="484.0" prefHeight="25.0" prefWidth="317.0" promptText="Search Report ID...." />
+      <Button fx:id="Search" layoutX="353.0" layoutY="484.0" mnemonicParsing="false" onAction="#btnSearchReport" text="Search" />
+   </children>
+</AnchorPane>

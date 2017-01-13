@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ReportController">
+   <children>
+      <TabPane fx:id="reportTabPane" layoutX="14.0" layoutY="14.0" prefHeight="578.0" prefWidth="928.0" tabClosingPolicy="UNAVAILABLE">
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding>
+         <tabs>
+            <Tab fx:id="tabCBCReport" onSelectionChanged="#tabSelectCBCReport" text="CBC Report">
+               <content>
+                  <StackPane fx:id="pdContent">
+                     <children>
+                        <AnchorPane fx:id="ppacpane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </children>
+                  </StackPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabLFTReport" onSelectionChanged="#tabSelectLFTReport" text="LFT Report">
+               <content>
+                  <StackPane fx:id="pdContent2">
+                     <children>
+                        <AnchorPane fx:id="ppacpane2" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </children>
+                  </StackPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabBloodSugarReport" onSelectionChanged="#tabSelectBloodSugarReport" text="Blood Sugar Report">
+               <content>
+                  <StackPane fx:id="pdContent3">
+                     <children>
+                        <AnchorPane fx:id="ppacpane3" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </children>
+                  </StackPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabStoolReport" onSelectionChanged="#tabSelectStoolReport" text="Stool Routine Report">
+               <content>
+                  <StackPane fx:id="pdContent4">
+                     <children>
+                        <AnchorPane fx:id="ppacpane4" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </children>
+                  </StackPane>
+               </content>
+            </Tab>
+            <Tab fx:id="tabUrineReport" onSelectionChanged="#tabSelectUrineReport" text="Urine Report">
+               <content>
+                  <StackPane fx:id="pdContent5">
+                     <children>
+                        <AnchorPane fx:id="ppacpane5" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                     </children>
+                  </StackPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

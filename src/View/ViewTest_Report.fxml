@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="547.0" prefWidth="926.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ViewTest_ReportController">
+   <children>
+      <ScrollPane layoutX="11.0" layoutY="18.0" minWidth="-Infinity" prefHeight="454.0" prefViewportHeight="452.0" prefViewportWidth="991.0" prefWidth="630.0">
+         <content>
+            <TableView fx:id="TestReportTable" layoutX="11.0" layoutY="18.0" minWidth="-Infinity" prefHeight="454.0" prefWidth="634.0">
+               <columns>
+                  <TableColumn fx:id="TR_ID" prefWidth="75.0" text="TR_ID" />
+                  <TableColumn fx:id="P_ID" prefWidth="85.0" text="P_ID" />
+                  <TableColumn fx:id="T_ID" prefWidth="93.0" text="T_ID" />
+                  <TableColumn fx:id="R_ID" prefWidth="93.0" text="R_ID" />
+                  <TableColumn fx:id="R_NAME" minWidth="6.0" prefWidth="125.0" text="Report Name" />
+                  <TableColumn fx:id="R_DATE" minWidth="0.0" prefWidth="157.0" text="Report Date" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Button fx:id="Update" layoutX="347.0" layoutY="489.0" mnemonicParsing="false" onAction="#btnUpdateTestReport" text="Update" />
+      <Button fx:id="Delete" layoutX="421.0" layoutY="489.0" mnemonicParsing="false" onAction="#btnDeleteTestReport" text="Delete" />
+      <Button fx:id="ViewAll" layoutX="492.0" layoutY="489.0" mnemonicParsing="false" onAction="#btnViewAllTestReport" text="View All" />
+      <Button fx:id="Refresh" layoutX="568.0" layoutY="489.0" mnemonicParsing="false" onAction="#btnRefresh" text="Refresh" />
+      <Button fx:id="Search" layoutX="174.0" layoutY="489.0" mnemonicParsing="false" onAction="#btnSearchTestReport" text="Search" />
+      <TextField fx:id="SearchTR_ID" layoutX="12.0" layoutY="489.0" prefHeight="25.0" prefWidth="139.0" promptText="Search Test Report ID....." />
+      <Button fx:id="AddNew" layoutX="257.0" layoutY="489.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnAddNewTestReport" prefHeight="25.0" prefWidth="75.0" text="Add New" />
+   </children>
+</AnchorPane>

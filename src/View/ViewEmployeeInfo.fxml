@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="547.0" prefWidth="926.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ViewEmployeeInfoController">
+   <children>
+      <ScrollPane layoutX="25.0" layoutY="25.0" minWidth="-Infinity" prefHeight="458.0" prefViewportHeight="452.0" prefViewportWidth="991.0" prefWidth="775.0">
+         <content>
+            <TableView fx:id="EmployeeInfoTable" prefHeight="458.0" prefWidth="775.0">
+               <columns>
+                  <TableColumn fx:id="EID" prefWidth="75.0" text="EID" />
+                  <TableColumn fx:id="ENAME" prefWidth="211.0" text="ENAME" />
+                  <TableColumn fx:id="ADDRESS" prefWidth="228.0" text="ADDRESS" />
+                  <TableColumn fx:id="MOBILENO" prefWidth="126.0" text="MOBILE NO" />
+                  <TableColumn fx:id="ROLE" prefWidth="119.0" text="ROLE" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Button fx:id="Refresh" layoutX="656.0" layoutY="501.0" mnemonicParsing="false" onAction="#btnRefresh" text="Refresh" />
+      <Button fx:id="ViewAll" layoutX="582.0" layoutY="501.0" mnemonicParsing="false" onAction="#btnViewAllEmployee" text="View All" />
+      <Button fx:id="Delete" layoutX="511.0" layoutY="501.0" mnemonicParsing="false" onAction="#btnDeleteEmployee" text="Delete" />
+      <Button fx:id="Update" layoutX="437.0" layoutY="501.0" mnemonicParsing="false" onAction="#btnUpdateEmployee" text="Update" />
+      <Button fx:id="AddNew" layoutX="353.0" layoutY="501.0" mnemonicParsing="false" onAction="#btnAddNewEmployee" text="Add New" />
+      <Button fx:id="Search" layoutX="269.0" layoutY="501.0" mnemonicParsing="false" onAction="#btnSearchEmployee" text="Search" />
+      <TextField fx:id="SearchEmployee" layoutX="47.0" layoutY="501.0" prefHeight="25.0" prefWidth="207.0" promptText="Search Employee...." />
+   </children>
+</AnchorPane>

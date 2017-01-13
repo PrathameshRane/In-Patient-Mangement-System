@@ -1,0 +1,55 @@
+.button{
+    -fx-text-fill: #4E4F52;
+    -fx-font-weight:700;
+    -fx-font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.button:pressed{
+    -fx-text-fill: #e23658;
+    
+}
+.button:hover{
+    -fx-background-color: #ebf280;
+    -fx-text-fill: #e23658;
+}
+
+.scroll-pane {
+    -fx-padding: 0;
+    -fx-background:#282E34;
+}
+
+#acHead{
+    -fx-background-color:#282E34;
+}
+
+#acDashBord{
+    -fx-background-color:#282E34;
+}
+
+.tab{
+    -fx-font-weight:700;
+    -fx-font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    text-decoration-color: #fafafa;
+}
+
+.tab:selected{
+     -fx-background-color: #f7899e;
+     -fx-text-fill: #e23658;
+     
+}
+.tab:hover{
+    -fx-background-color: #f7899e;
+    -fx-text-fill: #e23658;
+}
+
+.table-cell {
+    -fx-text-fill: #000000;
+}
+
+.table-view .column-header .label{
+     -fx-text-fill: #e23658;
+}
+
+
+
+

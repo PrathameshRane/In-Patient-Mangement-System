@@ -1,0 +1,9 @@
+.custem-button-input {
+    -fx-background-color: linear-gradient(#3399ff, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #ffffff;
+}
+.custem-button-input:hover {
+    -fx-background-color: linear-gradient(#2A5058, #3399ff);
+    -fx-text-fill: #ffffff;
+}

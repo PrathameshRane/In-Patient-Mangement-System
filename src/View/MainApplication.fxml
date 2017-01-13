@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="acMain" prefHeight="610.0" prefWidth="800.0" stylesheets="@../CSS/MainApplication.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainApplicationController">
+   <children>
+      <StackPane prefHeight="600.0" prefWidth="1200.0">
+         <children>
+            <BorderPane prefHeight="400.0" prefWidth="600.0">
+               <left>
+                  <AnchorPane fx:id="acDashBord" prefHeight="200.0" prefWidth="128.0" stylesheets="@../CSS/MainApplication.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <ScrollPane fx:id="leftSideBarScroolPan" prefViewportHeight="678.0" prefViewportWidth="128.0" prefWidth="128.0">
+                           <content>
+                              <AnchorPane prefHeight="610.0" prefWidth="127.0" stylesheets="@../CSS/MainApplication.css">
+                                 <children>
+                                    <Text fill="#e04e6b" layoutX="11.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DashBord">
+                                       <font>
+                                          <Font name="System Bold Italic" size="21.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="45.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icons/btnBreak.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="btnHome" contentDisplay="TOP" layoutY="42.0" mnemonicParsing="false" onAction="#btnHomeOnClick" prefHeight="78.0" prefWidth="127.0" text="Home">
+                                       <graphic>
+                                          <ImageView fx:id="imgHomeBtn" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Icons/home.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="45.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icons/btnBreak.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="btnPatient" contentDisplay="TOP" layoutY="127.0" mnemonicParsing="false" onAction="#btnPatientOnClick" prefHeight="78.0" prefWidth="127.0" text="Patient">
+                                       <graphic>
+                                          <ImageView fx:id="imgPatientBtn" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Icons/Patient.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="btnDoctor" contentDisplay="TOP" layoutY="212.0" mnemonicParsing="false" onAction="#btnDoctorOnClick" prefHeight="78.0" prefWidth="127.0" text="Doctor">
+                                       <graphic>
+                                          <ImageView fx:id="imgDoctorBtn" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Icons/Doctor.png" />
+                                             </image>
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="btnEmployee" contentDisplay="TOP" layoutY="297.0" mnemonicParsing="false" onAction="#btnEmployeeOnClick" prefHeight="78.0" prefWidth="127.0" text="Employee">
+                                       <graphic>
+                                          <ImageView fx:id="imgEmployeeBtn" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Icons/Employee.png" />
+                                             </image>
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="45.0" layoutY="291.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icons/btnBreak.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="45.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icons/btnBreak.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="btnBed" contentDisplay="TOP" layoutY="382.0" mnemonicParsing="false" onAction="#btnBedOnClick" prefHeight="78.0" prefWidth="127.0" text="Bed">
+                                       <graphic>
+                                          <ImageView fx:id="imgBedBtn1" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Icons/Bed.png" />
+                                             </image>
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="45.0" layoutY="461.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icons/btnBreak.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Button fx:id="btnReport" contentDisplay="TOP" layoutX="-1.0" layoutY="468.0" mnemonicParsing="false" onAction="#btnReportOnClick" prefHeight="78.0" prefWidth="127.0" text="Report">
+                                       <graphic>
+                                          <ImageView fx:id="imgReportBtn" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Icons/Report.png" />
+                                             </image>
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <ImageView fitHeight="5.0" fitWidth="114.0" layoutX="45.0" layoutY="547.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icons/btnBreak.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <BorderPane fx:id="appContent" minWidth="-Infinity" prefHeight="200.0" prefWidth="1010.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <AnchorPane fx:id="acHead" minWidth="-Infinity" prefHeight="40.0" prefWidth="500.0" stylesheets="@../CSS/MainApplication.css" BorderPane.alignment="CENTER">
+                           <children>
+                              <Text fill="#e04e6b" layoutX="250.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In-Patient Mangement System">
+                                 <font>
+                                    <Font name="TektonPro-BoldObl" size="31.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </top>
+                     <center>
+                        <StackPane fx:id="acContent" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <AnchorPane prefHeight="636.0" prefWidth="968.0" stylesheets="@../CSS/MainApplication.css" />
+                           </children>
+                        </StackPane>
+                     </center>
+                  </BorderPane>
+               </center>
+            </BorderPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

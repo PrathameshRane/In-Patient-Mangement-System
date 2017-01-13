@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="547.0" prefWidth="926.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ViewDoctorInfoController">
+   <children>
+      <ScrollPane layoutX="25.0" layoutY="25.0" minWidth="-Infinity" prefHeight="458.0" prefViewportHeight="452.0" prefViewportWidth="771.0" prefWidth="771.0">
+         <content>
+            <TableView fx:id="DoctorInfoTable" layoutX="25.0" layoutY="25.0" prefHeight="458.0" prefWidth="771.0">
+              <columns>
+                <TableColumn fx:id="DID" prefWidth="75.0" text="DID" />
+                <TableColumn fx:id="DNAME" prefWidth="211.0" text="DNAME" />
+                  <TableColumn fx:id="ADDRESS" prefWidth="228.0" text="ADDRESS" />
+                  <TableColumn fx:id="MOBILENO" prefWidth="126.0" text="MOBILE NO" />
+                  <TableColumn fx:id="SPECIALITY" prefWidth="119.0" text="SPECIALITY" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <TextField fx:id="SearchDoctor" layoutX="37.0" layoutY="491.0" prefHeight="25.0" prefWidth="207.0" promptText="Search Doctor...." />
+      <Button fx:id="Search" layoutX="259.0" layoutY="491.0" mnemonicParsing="false" onAction="#btnSearchDoctor" text="Search" />
+      <Button fx:id="AddNew" layoutX="343.0" layoutY="491.0" mnemonicParsing="false" onAction="#btnAddNewDoctor" text="Add New" />
+      <Button fx:id="Update" layoutX="427.0" layoutY="491.0" mnemonicParsing="false" onAction="#btnUpdateDoctor" text="Update" />
+      <Button fx:id="Delete" layoutX="501.0" layoutY="491.0" mnemonicParsing="false" onAction="#btnDeleteDoctor" text="Delete" />
+      <Button fx:id="ViewAll" layoutX="572.0" layoutY="491.0" mnemonicParsing="false" onAction="#btnViewAllDoctor" text="View All" />
+      <Button fx:id="Refresh" layoutX="648.0" layoutY="491.0" mnemonicParsing="false" onAction="#btnRefresh" text="Refresh" />
+   </children>
+</AnchorPane>

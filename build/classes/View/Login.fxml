@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginController">
+   <children>
+      <ImageView fitHeight="616.0" fitWidth="935.0" layoutX="-3.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icons/Background.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="473.0" layoutY="315.0" prefHeight="163.0" prefWidth="326.0">
+         <children>
+            <Label text="Username :">
+               <font>
+                  <Font name="Segoe Script Bold" size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="Password" layoutX="130.0" layoutY="70.0" prefHeight="25.0" prefWidth="196.0" promptText="Password" />
+            <TextField fx:id="Username" layoutX="130.0" layoutY="4.0" prefHeight="25.0" prefWidth="196.0" promptText="Username" />
+            <Label layoutY="67.0" text="Password :">
+               <font>
+                  <Font name="Segoe Script Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnLogin" layoutX="188.0" layoutY="117.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnLoginAction" prefHeight="25.0" prefWidth="81.0" styleClass="custem-button-input" stylesheets="@../CSS/Login.css" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Label layoutX="29.0" layoutY="291.0" text="In-Patient Mangement System" textFill="#3dafd9">
+         <font>
+            <Font name="Freehand521 BT" size="26.0" />
+         </font>
+         <effect>
+            <Reflection bottomOpacity="0.12" fraction="0.66" topOpacity="0.37" />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="547.0" prefWidth="926.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ViewTestInfoController">
+   <children>
+      <Button fx:id="AddNew" layoutX="255.0" layoutY="488.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#btnAddNewTest" prefHeight="25.0" prefWidth="75.0" text="Add New" />
+      <TextField fx:id="SearchPatientID" layoutX="10.0" layoutY="488.0" prefHeight="25.0" prefWidth="139.0" promptText="Search Patient ID....." />
+      <Button fx:id="Search" layoutX="172.0" layoutY="488.0" mnemonicParsing="false" onAction="#btnSearchPatientID" text="Search" />
+      <ScrollPane layoutX="11.0" layoutY="18.0" minWidth="-Infinity" prefHeight="454.0" prefViewportHeight="452.0" prefViewportWidth="991.0" prefWidth="600.0">
+         <content>
+            <TableView fx:id="TestTable" layoutX="11.0" layoutY="18.0" minWidth="-Infinity" prefHeight="454.0" prefWidth="600.0">
+               <columns>
+                  <TableColumn fx:id="TID" prefWidth="78.0" text="TID" />
+                  <TableColumn fx:id="PID" prefWidth="194.0" text="PID" />
+                  <TableColumn fx:id="TEST_NAME" minWidth="6.0" prefWidth="163.0" text="TEST NAME" />
+                  <TableColumn fx:id="TEST_DATE" minWidth="0.0" prefWidth="159.0" text="TEST DATE" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Button fx:id="Refresh" layoutX="566.0" layoutY="488.0" mnemonicParsing="false" onAction="#btnRefresh" text="Refresh" />
+      <Button fx:id="ViewAll" layoutX="490.0" layoutY="488.0" mnemonicParsing="false" onAction="#btnViewAllTest" text="View All" />
+      <Button fx:id="Delete" layoutX="419.0" layoutY="488.0" mnemonicParsing="false" onAction="#btnDeleteTest" text="Delete" />
+      <Button fx:id="Update" layoutX="345.0" layoutY="488.0" mnemonicParsing="false" onAction="#btnUpdateTest" text="Update" />
+   </children>
+</AnchorPane>

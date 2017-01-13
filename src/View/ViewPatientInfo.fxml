@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minWidth="-Infinity" prefHeight="530.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ViewPatientInfoController">
+   <padding>
+      <Insets left="30.0" right="30.0" />
+   </padding>
+   <children>
+      <ScrollPane layoutX="11.0" layoutY="18.0" minWidth="-Infinity" prefHeight="454.0" prefViewportHeight="452.0" prefViewportWidth="991.0" prefWidth="991.0">
+         <content>
+            <TableView fx:id="PatientInfoTable" layoutX="11.0" layoutY="18.0" minWidth="-Infinity" prefHeight="454.0" prefWidth="991.0">
+              <columns>
+                <TableColumn fx:id="PID" prefWidth="73.0" text="PID" />
+                <TableColumn fx:id="PNAME" prefWidth="150.0" text="PNAME" />
+                  <TableColumn fx:id="DOB" minWidth="6.0" prefWidth="108.0" text="DOB" />
+                  <TableColumn fx:id="GENDER" minWidth="0.0" prefWidth="89.0" text="GENDER" />
+                  <TableColumn fx:id="AGE" prefWidth="81.0" text="AGE" />
+                  <TableColumn fx:id="WEIGHT" prefWidth="96.0" text="WEIGHT" />
+                  <TableColumn fx:id="BLOOD_GRP" prefWidth="85.0" text="BLOOD GRP" />
+                  <TableColumn fx:id="ADDRESS" prefWidth="113.0" text="ADDRESS" />
+                  <TableColumn fx:id="MOBILE_NO" prefWidth="75.0" text="MOBILE_NO" />
+                  <TableColumn fx:id="GUARDIAN_NAME" prefWidth="150.0" text="GUARDIAN_NAME" />
+                  <TableColumn fx:id="GUARDIAN_MOB_NO" prefWidth="150.0" text="GUARDIAN_MOB_NO" />
+                  <TableColumn fx:id="ADMISSION_DATE" prefWidth="120.0" text="ADMISSION_DATE" />
+                  <TableColumn fx:id="BED_NO" prefWidth="75.0" text="BED_NO" />
+                  <TableColumn fx:id="D_NAME" prefWidth="120.0" text="D_NAME" />
+                  <TableColumn fx:id="ILLNESS" prefWidth="100.0" text="ILLNESS" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Button fx:id="Search" layoutX="343.0" layoutY="484.0" mnemonicParsing="false" onAction="#btnSearchPatient" text="Search" />
+      <TextField fx:id="SearchPatient" layoutX="11.0" layoutY="484.0" prefHeight="25.0" prefWidth="317.0" promptText="Search Patient....." />
+      <Button fx:id="ViewAll" layoutX="663.0" layoutY="484.0" mnemonicParsing="false" onAction="#btnViewAllPatient" text="ViewAll" />
+      <Button fx:id="AddNew" layoutX="431.0" layoutY="484.0" mnemonicParsing="false" onAction="#btnAddNewPatient" prefHeight="25.0" prefWidth="75.0" text="Add New" />
+      <Button fx:id="Update" layoutX="516.0" layoutY="484.0" mnemonicParsing="false" onAction="#btnUpdatePatient" text="Update" />
+      <Button fx:id="Delete" layoutX="591.0" layoutY="484.0" mnemonicParsing="false" onAction="#btnDeletePatient" text="Delete" />
+      <Button fx:id="Refresh" layoutX="736.0" layoutY="484.0" mnemonicParsing="false" onAction="#btnRefresh" text="Refresh" />
+   </children>
+   <opaqueInsets>
+      <Insets left="30.0" right="30.0" />
+   </opaqueInsets>
+</AnchorPane>
